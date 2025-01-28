@@ -1,5 +1,5 @@
-import PMockup2 from "../assets/projects/P-Mockup2.png";
-import PMockup from "../assets/projects/P-Mockup.png";
+import PMockup2 from "../assets/projects/P-MockUp2.png";
+import PMockup from "../assets/projects/P-MockUp.png";
 
 export const HERO_CONTENT = `Hi, I'm Dom. I have full stack experience and a passion for developing innovative sotware solutions.`;
 
