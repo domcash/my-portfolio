@@ -22,7 +22,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="/cv.pdf" target="_blank" className="hover:text-sky-600 transition">
+          <a href="/Dom_s_CV2.pdf" target="_blank" className="hover:text-sky-600 transition">
             CV
           </a>
         </li>
