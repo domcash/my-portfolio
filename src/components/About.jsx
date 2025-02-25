@@ -1,6 +1,7 @@
 import aboutImg from "../assets/about.jpg";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react"
 
 const About = () => {
     return (
