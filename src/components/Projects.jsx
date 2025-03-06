@@ -18,18 +18,20 @@ const Projects = () => {
             key={index}
             className="mb-16 flex flex-col lg:flex-row lg:items-center lg:justify-center lg:space-x-8 w-full"
           >
-            {/* Image Section */}
+            {/* Image Section with Link */}
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ x: -100, opacity: 0 }}
               transition={{ duration: 1 }}
               className="flex-shrink-0 lg:w-1/3"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="rounded w-full lg:w-auto border-none shadow-none"
-              />
+              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="rounded w-full lg:w-auto border-none shadow-none"
+                />
+              </a>
             </motion.div>
             {/* Text Section */}
             <motion.div
@@ -38,9 +40,11 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="text-center lg:text-left lg:w-2/3"
             >
-              <h6 className="mb-4 text-2xl font-semibold text-white">
-                {project.title}
-              </h6>
+              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                <h6 className="mb-4 text-2xl font-semibold text-white hover:text-sky-600">
+                  {project.title}
+                </h6>
+              </a>
               <p className="mb-4 text-neutral-400">{project.description}</p>
               <div className="flex flex-wrap justify-center lg:justify-start">
                 {project.technologies.map((tech, index) => (

@@ -45,6 +45,7 @@ export const PROJECTS = [
     image: PMockup,
     description:
       "Personal portfolio website to showcase projects, experience, and education.",
+      githubLink: "https://github.com/domcash/my-portfolio",
     technologies: ["React.js", "JavaScript", "Tailwind"],
   },
   {
@@ -52,6 +53,7 @@ export const PROJECTS = [
     image: PMockup2,
     description:
       "Functional website to browse and purchase home appliances.",
+      githubLink: "https://github.com/domcash/HomeApplianceStore",
     technologies: ["Java", "HTML", "SQLite"],
   },
 ];

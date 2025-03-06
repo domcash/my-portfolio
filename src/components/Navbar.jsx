@@ -21,11 +21,6 @@ const Navbar = () => {
             Contact
           </a>
         </li>
-        <li>
-          <a href="/Dom_s_CV.pdf" target="_blank" className="hover:text-sky-600 transition">
-            CV
-          </a>
-        </li>
       </ul>
     </nav>
   );
