@@ -1,5 +1,8 @@
 import PMockup2 from "../assets/projects/P-MockUp2.png";
 import PMockup from "../assets/projects/P-MockUp.png";
+import MapMockup from "../assets/projects/MapMockup4.png";
+import { FaGithub } from "react-icons/fa";
+
 
 export const HERO_CONTENT = `Hi, I'm Dom. I have full stack experience and a passion for developing innovative sotware solutions.`;
 
@@ -41,20 +44,34 @@ export const EDUCATION = [
 
 export const PROJECTS = [
   {
-    title: "Portfolio Website",
-    image: PMockup,
+    title: "NW Trails",
+    image: MapMockup,
     description:
-      "Personal portfolio website to showcase projects, experience, and education.",
-      githubLink: "https://github.com/domcash/my-portfolio",
-    technologies: ["React.js", "JavaScript", "Tailwind"],
+      "An interactive map of hiking trails in North Wales using Mapbox GL JS.",
+      websiteLink: "https://nw-trails.vercel.app/",
+      githubLink: "https://github.com/domcash/NW-Trails",
+    technologies: ["JavaScript", "HTML", "CSS", "Mapbox GL JS"],
+    showGithubIcon: true,
   },
   {
     title: "Home Appliance Store",
     image: PMockup2,
     description:
       "Functional website to browse and purchase home appliances.",
+      websiteLink: "https://github.com/domcash/HomeApplianceStore",
       githubLink: "https://github.com/domcash/HomeApplianceStore",
     technologies: ["Java", "HTML", "SQLite"],
+    showGithubIcon: true,
+  },
+  {
+    title: "Portfolio Website",
+    image: PMockup,
+    description:
+      "Personal portfolio website to showcase projects, experience, and education.",
+      websiteLink: "https://www.domcash.net/",
+      githubLink: "https://github.com/domcash/my-portfolio",
+    technologies: ["React.js", "JavaScript", "Tailwind"],
+    showGithubIcon: true,
   },
 ];
 
