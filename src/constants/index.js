@@ -1,6 +1,7 @@
 import PMockup2 from "../assets/projects/P-MockUp2.png";
 import PMockup from "../assets/projects/P-MockUp.png";
 import MapMockup from "../assets/projects/MapMockup4.png";
+import HS from "../assets/projects/HS.png";
 import { FaGithub } from "react-icons/fa";
 
 
@@ -31,7 +32,7 @@ export const EDUCATION = [
     role: "Msc Computer Science",
     company: "Manchester Metropolitan University - Distinction",
     description: `Pursuing a Master's in Computer Science. On track to graduate with a distinction in 2025, having studied advanced topics in Object Oriented Programming, Data Structures, Algorithms, and Database Management.`,
-    technologies: ["Java", "React.js", "Python", "JavaScript", "HTML", "SQL"],
+    technologies: ["Java", , "C#", "React.js", "Python", "JavaScript", "HTML", "SQL"],
   },
   {
     year: "2016 - 2020",
@@ -47,15 +48,15 @@ export const PROJECTS = [
     title: "NW Trails",
     image: MapMockup,
     description:
-      "An interactive map of hiking trails in North Wales using Mapbox GL JS.",
+      "An interactive map of hiking trails in North Wales.",
       websiteLink: "https://nw-trails.vercel.app/",
       githubLink: "https://github.com/domcash/NW-Trails",
     technologies: ["JavaScript", "HTML", "CSS", "Mapbox GL JS"],
     showGithubIcon: true,
   },
   {
-    title: "Home Appliance Store",
-    image: PMockup2,
+    title: "E-Commerce Store",
+    image: HS,
     description:
       "Functional website to browse and purchase home appliances.",
       websiteLink: "https://github.com/domcash/HomeApplianceStore",
@@ -67,7 +68,7 @@ export const PROJECTS = [
     title: "Portfolio Website",
     image: PMockup,
     description:
-      "Personal portfolio website to showcase projects, experience, and education.",
+      "My portfolio website to showcase projects, experience, and education.",
       websiteLink: "https://www.domcash.net/",
       githubLink: "https://github.com/domcash/my-portfolio",
     technologies: ["React.js", "JavaScript", "Tailwind"],
