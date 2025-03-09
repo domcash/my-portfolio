@@ -5,7 +5,7 @@ import HS from "../assets/projects/HS.png";
 import { FaGithub } from "react-icons/fa";
 
 
-export const HERO_CONTENT = `Hi, I'm Dom. I have full stack experience and a passion for developing innovative sotware solutions.`;
+export const HERO_CONTENT = `Hi, I'm Dom. I'm a full stack developer with a passion for crafting innovative software solutions that solve real-world problems.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
@@ -45,16 +45,6 @@ export const EDUCATION = [
 
 export const PROJECTS = [
   {
-    title: "NW Trails",
-    image: MapMockup,
-    description:
-      "An interactive map of hiking trails in North Wales.",
-      websiteLink: "https://nw-trails.vercel.app/",
-      githubLink: "https://github.com/domcash/NW-Trails",
-    technologies: ["JavaScript", "HTML", "CSS", "Mapbox GL JS"],
-    showGithubIcon: true,
-  },
-  {
     title: "E-Commerce Store",
     image: HS,
     description:
@@ -74,10 +64,17 @@ export const PROJECTS = [
     technologies: ["React.js", "JavaScript", "Tailwind"],
     showGithubIcon: true,
   },
+  {
+    title: "NW Trails",
+    image: MapMockup,
+    description:
+      "An interactive map of hiking trails in North Wales.",
+      websiteLink: "https://nw-trails.vercel.app/",
+      githubLink: "https://github.com/domcash/NW-Trails",
+    technologies: ["JavaScript", "HTML", "CSS", "Mapbox GL JS"],
+    showGithubIcon: true,
+  },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
 };

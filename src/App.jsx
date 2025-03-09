@@ -20,9 +20,9 @@ const App = () => {
       <Navbar />
       <Hero /> 
       <Technologies />
-      <Education />
+      <Projects />
       <Experience />  
-      <Projects />  
+      <Education />  
       <Contact />
 
       {/* Footer Section */}
