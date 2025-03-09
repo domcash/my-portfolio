@@ -19,7 +19,7 @@ const container = (delay) => ({
 const Hero = () => {
   return (
     <div className="flex h-screen items-center justify-center border-b border-neutral-900 px-4">
-      {/* custom CSS for mobile */}
+      {/* Custom CSS for mobile and shimmer animation */}
       <style>{`
         @media (max-width: 640px) {
           .hero-title {
@@ -43,13 +43,21 @@ const Hero = () => {
             font-size: 1.75rem; 
           }
         }
+        @keyframes shimmer {
+          0% { text-shadow: 0 0 6px rgba(14, 165, 233, 0.6); }
+          50% { text-shadow: 0 0 18px rgba(14, 165, 233, 0.95), 0 0 30px rgba(14, 165, 233, 0.75); }
+          100% { text-shadow: 0 0 6px rgba(14, 165, 233, 0.6); }
+        }
+        .shimmer-text {
+          animation: shimmer 2s infinite ease-in-out;
+        }
       `}</style>
       <div className="text-center">
         <motion.h1
           variants={container(0)}
           initial="hidden"
           animate="visible"
-          className="mt-[-380px] pb-0 text-4xl sm:text-6xl md:text-8xl lg:text-[100px] xl:text-[120px] font-thin tracking-tight text-white hero-title"
+          className="mt-[-380px] pb-0 text-4xl sm:text-6xl md:text-8xl lg:text-[100px] xl:text-[120px] font-thin tracking-tight text-white hero-title shimmer-text"
         >
           Dominic Cash
         </motion.h1>
