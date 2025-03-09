@@ -4,11 +4,21 @@ import { motion } from "framer-motion";
 const Experience = () => {
   return (
     <div id="experience" className="border-b border-neutral-900 pb-4">
+      {/* Inject custom CSS for mobile */}
+      <style>{`
+        @media (max-width: 640px) {
+          .tech-badge {
+            font-size: 0.875rem; /* 14px, up from ~12px (text-sm) */
+            font-weight: 600; /* Semibold, up from medium */
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for pop */
+          }
+        }
+      `}</style>
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 0.5 }}
-        className="my-20 text-center text-4xl"
+        className="my-20 text-center text-4xl text-white"
       >
         Experience
       </motion.h2>
@@ -41,7 +51,7 @@ const Experience = () => {
               {experience.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="mr-2 mt-4 rounded bg-neutral-900 px-2 px-1 text-sm font-medium text-sky-600"
+                  className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-sky-600 tech-badge"
                 >
                   {tech}
                 </span>

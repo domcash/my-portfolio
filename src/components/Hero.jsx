@@ -19,13 +19,28 @@ const container = (delay) => ({
 const Hero = () => {
   return (
     <div className="flex h-screen items-center justify-center border-b border-neutral-900 px-4">
-      {/* Inject custom CSS for mobile */}
+      {/* custom CSS for mobile */}
       <style>{`
         @media (max-width: 640px) {
+          .hero-title {
+            font-size: 2.5rem; 
+            font-weight: 500; 
+            color: #ffffff; 
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+          }
+          .hero-subtitle {
+            font-size: 1.125rem; 
+            font-weight: 600; 
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          }
           .hero-text {
-            color: #d1d5db; /* Tailwind gray-300 */
-            font-weight: 600; /* Semibold */
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            font-size: 1rem; 
+            font-weight: 500; 
+            color: #d1d5db; 
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          }
+          .hero-icons {
+            font-size: 1.75rem; 
           }
         }
       `}</style>
@@ -34,7 +49,7 @@ const Hero = () => {
           variants={container(0)}
           initial="hidden"
           animate="visible"
-          className="mt-[-380px] pb-0 text-4xl sm:text-6xl md:text-8xl lg:text-[100px] xl:text-[120px] font-thin tracking-tight text-white"
+          className="mt-[-380px] pb-0 text-4xl sm:text-6xl md:text-8xl lg:text-[100px] xl:text-[120px] font-thin tracking-tight text-white hero-title"
         >
           Dominic Cash
         </motion.h1>
@@ -42,7 +57,7 @@ const Hero = () => {
           variants={container(0.5)}
           initial="hidden"
           animate="visible"
-          className="bg-gradient-to-r from-sky-600 via-slate-500 to-green-800 bg-clip-text text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-tight text-transparent"
+          className="bg-gradient-to-r from-sky-600 via-slate-500 to-green-800 bg-clip-text text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-tight text-transparent hero-subtitle"
         >
           Software Engineer | Manchester
         </motion.span>
@@ -57,7 +72,7 @@ const Hero = () => {
       </div>
 
       {/* Social Media Icons */}
-      <div className="absolute bottom-8 flex items-center justify-center gap-8 text-2xl sm:text-3xl">
+      <div className="absolute bottom-8 flex items-center justify-center gap-8 text-2xl sm:text-3xl hero-icons">
         <a
           href="https://www.linkedin.com/in/dominic-cash-8076261b1/"
           target="_blank"

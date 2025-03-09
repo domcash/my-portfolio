@@ -32,7 +32,7 @@ export const EDUCATION = [
     role: "Msc Computer Science",
     company: "Manchester Metropolitan University - Distinction",
     description: `Pursuing a Master's in Computer Science. On track to graduate with a distinction in 2025, having studied advanced topics in Object Oriented Programming, Data Structures, Algorithms, and Database Management.`,
-    technologies: ["Java", , "C#", "React.js", "Python", "JavaScript", "HTML", "SQL"],
+    technologies: ["Java" , "C#", "React.js", "Python", "JavaScript", "HTML", "SQL"],
   },
   {
     year: "2016 - 2020",
