@@ -19,12 +19,22 @@ const container = (delay) => ({
 const Hero = () => {
   return (
     <div className="flex h-screen items-center justify-center border-b border-neutral-900 px-4">
+      {/* Inject custom CSS for mobile */}
+      <style>{`
+        @media (max-width: 640px) {
+          .hero-text {
+            color: #d1d5db; /* Tailwind gray-300 */
+            font-weight: 600; /* Semibold */
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+          }
+        }
+      `}</style>
       <div className="text-center">
         <motion.h1
           variants={container(0)}
           initial="hidden"
           animate="visible"
-          className="mt-[-380px] pb-0 text-4xl sm:text-6xl md:text-8xl lg:text-[100px] xl:text-[120px] font-thin tracking-tight"
+          className="mt-[-380px] pb-0 text-4xl sm:text-6xl md:text-8xl lg:text-[100px] xl:text-[120px] font-thin tracking-tight text-white"
         >
           Dominic Cash
         </motion.h1>
@@ -40,7 +50,7 @@ const Hero = () => {
           variants={container(1)}
           initial="hidden"
           animate="visible"
-          className="my-2 max-w-xl py-10 font-light tracking-tighter mx-auto text-sm sm:text-base md:text-lg lg:text-xl"
+          className="my-2 max-w-xl py-10 font-light tracking-tighter mx-auto text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 hero-text"
         >
           {HERO_CONTENT}
         </motion.p>
